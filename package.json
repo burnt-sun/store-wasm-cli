@@ -1,0 +1,25 @@
+{
+  "name": "store-wasm-cli",
+  "version": "1.0.0",
+  "main": "storeWasm.js",
+  "type": "module",
+  "bin": {
+    "store-wasm": "./storeWasm.js"
+  },
+  "scripts": {
+    "start": "node storeWasm.js"
+  },
+  "keywords": [
+    "cosmwasm",
+    "cli",
+    "xion",
+    "wasm",
+    "blockchain"
+  ],
+  "author": "Sun Burnt",
+  "license": "MIT",
+  "description": "CLI tool to store wasm on XION",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
