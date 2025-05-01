@@ -10,10 +10,10 @@ This CLI tool provides a simple way to store WASM contracts on the XION blockcha
 
 ```bash
 # Install globally
-npm install -g store-wasm-cli
+npm install -g xion-store-wasm
 
 # Or install locally
-npm install store-wasm-cli
+npm install xion-store-wasm
 ```
 
 ## Prerequisites

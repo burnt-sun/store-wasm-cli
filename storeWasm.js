@@ -29,7 +29,7 @@ async function main() {
     if (queryOnly) {
       txHash = firstArg;
       if (!txHash) {
-        console.error("Usage: store-wasm --query-only <tx-hash>");
+        console.error("Usage: xion-store-wasm --query-only <tx-hash>");
         process.exit(1);
       }
       console.log(`🔍 Querying existing tx: ${txHash}`);
@@ -39,7 +39,7 @@ async function main() {
 
       if (!wasmFile || !wallet) {
         console.error(
-          "Usage: store-wasm <wasm_file> <wallet_name> [--chain-id id] [--rpc url] [--gas-price price] \n or \n Usage: store-wasm --query-only <tx-hash>"
+          "Usage: xion-store-wasm <wasm_file> <wallet_name> [--chain-id id] [--rpc url] [--gas-price price] \n or \n Usage: xion-store-wasm --query-only <tx-hash>"
         );
         process.exit(1);
       }
