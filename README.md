@@ -1,4 +1,4 @@
-# Store WASM CLI
+# XION Store WASM CLI
 
 A command-line tool for storing WASM contracts on the XION blockchain network.
 
@@ -27,7 +27,7 @@ npm install xion-store-wasm
 ### Store a WASM Contract
 
 ```bash
-store-wasm <wasm_file> <wallet_name> [options]
+xion-store-wasm <wasm_file> <wallet_name> [options]
 ```
 
 #### Options
@@ -39,24 +39,24 @@ store-wasm <wasm_file> <wallet_name> [options]
 ### Query Transaction Status
 
 ```bash
-store-wasm --query-only <tx-hash>
+xion-store-wasm --query-only <tx-hash>
 ```
 
 ## Examples
 
 1. Store a WASM contract:
 ```bash
-store-wasm ./build/xion_wasm.wasm mywallet
+xion-store-wasm ./build/xion_wasm.wasm mywallet
 ```
 
 2. Store with custom options:
 ```bash
-store-wasm ./build/xion_wasm.wasm mywallet --chain-id custom-chain --rpc https://custom-rpc.com
+xion-store-wasm ./build/xion_wasm.wasm mywallet --chain-id custom-chain --rpc https://custom-rpc.com
 ```
 
 3. Query transaction status:
 ```bash
-store-wasm --query-only ABC123DEF456...
+xion-store-wasm --query-only ABC123DEF456...
 ```
 
 ## Output
